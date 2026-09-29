@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+    <form method="POST">
+    <div id="loginPopup" class="popup">
+        <div class="popup-container">
+            <h2>Login</h2>
+            <label for="username">Username</label> <br>
+            <input type="text" name="username" required><br><br>
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" required><br>
+            <button type="submit" name="Submit">Submit</button>
+            <a href="index.html" style="color: black;">Cancel</a>
+        </div>
+    </div>
+    </form>
+
+    <form action="/submit-registration" method="POST">
+    <div id="registerPopup" class="popup">
+        <div class="popup-container">
+            <h2>Register</h2>
+            <label for="username">Username</label> <br>
+                <input type="text" name="username" required><br><br>
+            <label for="firstname">First Name</label> <br>
+                <input type="text" name="firstname" required><br><br>
+            <label for="lastname">Last Name</label> <br>
+                <input type="text" name="lastname" required><br><br>
+            <label for="password">Password</label> <br>
+                <input type="password" name="password" required><br><br>
+            <label for="confirmpassword">Confirm Password</label> <br>
+                <input type="password" name="confirmpassword" required><br>
+            <button type="submit" name="Submit">Submit</button>
+            <a href="index.html" style="color: black;">Cancel</a>
+        </div>
+    </div>
+    </form>
+<body>
+    <nav class="navdesign">
+        <h2>Name</h2>
+        <div class="nav1">
+        <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="aboutus.html">ABOUT</a>
+        <a href="store.html">STORE</a>
+        <a href="cart.html">CART</a>
+        </div>
+
+        <div class="nav2">
+        <a href="#loginPopup">LOGIN</a>
+        <a href="#registerPopup">REGISTER</a>
+        </div>
+    </nav>
+    <div class="aboutus">
+        <h1>About Us</h1>
+        <h2 style="font-weight: 500;">Group Members (5)</h2>
+        <p style="margin-left: 30px;">Andrie Lanz Caniga</p>
+        <p style="margin-left: 30px;">John Gabriel Tiempo</p>
+        <p style="margin-left: 30px;">John Mar Codioran</p>
+        <p style="margin-left: 30px;">Patrick Nathaniel Mahusay</p>
+        <p style="margin-left: 30px;">Mark John Villafuerte</p>
+
+    <div class="alignment">
+        
+    <div class="section1">
+        <h2>Vision</h2>
+        <p>We envision that the product will be used on a daily basis.</p>
+    </div>
+    <div class="section2">
+        <h2>Mission</h2>
+        <p>To provide an affordable product to the needs of our customers.</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>

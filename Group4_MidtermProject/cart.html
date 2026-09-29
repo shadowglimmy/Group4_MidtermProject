@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+    <form method="POST">
+    <div id="loginPopup" class="popup">
+        <div class="popup-container">
+            <h2>Login</h2>
+            <label for="username">Username</label> <br>
+            <input type="text" name="username" required><br><br>
+            <label for="password">Password</label> <br>
+            <input type="password" name="password" required><br>
+            <button type="submit" name="Submit">Submit</button>
+            <a href="index.html" style="color: black;">Cancel</a>
+        </div>
+    </div>
+    </form>
+
+    <form action="/submit-registration" method="POST">
+    <div id="registerPopup" class="popup">
+        <div class="popup-container">
+            <h2>Register</h2>
+            <label for="username">Username</label> <br>
+                <input type="text" name="username" required><br><br>
+            <label for="firstname">First Name</label> <br>
+                <input type="text" name="firstname" required><br><br>
+            <label for="lastname">Last Name</label> <br>
+                <input type="text" name="lastname" required><br><br>
+            <label for="password">Password</label> <br>
+                <input type="password" name="password" required><br><br>
+            <label for="confirmpassword">Confirm Password</label> <br>
+                <input type="password" name="confirmpassword" required><br>
+            <button type="submit" name="Submit">Submit</button>
+            <a href="index.html" style="color: black;">Cancel</a>
+        </div>
+    </div>
+    </form>
+<body>
+    <nav class="navdesign">
+        <h2>Name</h2>
+        <div class="nav1">
+        <a href="index.html">HOME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="aboutus.html">ABOUT</a>
+        <a href="store.html">STORE</a>
+        <a href="cart.html">CART</a>
+        </div>
+
+        <div class="nav2">
+        <a href="#loginPopup">LOGIN</a>
+        <a href="#registerPopup">REGISTER</a>
+        </div>
+    </nav>
+    <div class="cart">
+        <h1>Your Cart</h1>
+        <div class="cartitem">
+            <div>
+                <h2>product</h2>
+                <p>price tag</p>
+                <p>Quantity:</p>
+            </div>
+        </div>
+        <h2>Total:</h2>
+        <button onclick="alert('Checked out!')">CHECKOUT</button>
+
+    </div>
+</body>
+</html>
